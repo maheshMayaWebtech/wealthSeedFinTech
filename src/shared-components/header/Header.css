@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+.navBar .mainLogo {
+    width: 100%;
+    cursor: pointer;
+    height: 140px;
+}
+
+.navBar ul li {
+    display: inline-block;
+    margin: 0rem 1rem;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.navBar ul li .activeLinkItem {
+    color: var(--blue);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navBar ul li .navLinkItem {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.navBar ul li .navLinkItem:hover {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.navBar .MenuIcon {
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: none;
+    cursor: pointer;
+}
+
+.navBar .crossCheck {
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: none;
+}
+
+.navBar .webViewShow {
+    display: block;
+}
+
+/**********MEDIA QUERY SECTION START***********/
+@media screen and (max-width: 991px) {
+    .navBar .MenuIcon {
+        font-size: 1.8rem;
+        font-weight: 600;
+        display: block;
+    }
+
+    .navBar .crossCheck {
+        font-size: 1.8rem;
+        font-weight: 600;
+        display: block;
+        position: absolute;
+        right: 0.9rem;
+        top: 0.9rem;
+    }
+    .navBar {
+        margin-top: 0px;
+    }
+    .navBar ul {
+        position: fixed;
+        width: 55%;
+        height: 100vh;
+        box-shadow: 2px 4px 8px #ddd;
+        background-color: var(--white);
+        top: 0px;
+        right: 0px;
+        text-align: center;
+        z-index: 1;
+        transition: all .5s;
+        padding: 0;
+    }
+
+    .navBar ul li {
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+
+    .navBar .webViewShow {
+        display: none;
+    }
+}
