@@ -36,12 +36,17 @@ const Footer = () => {
             <div className="SocialIcon">
               <FaFacebook className="mediaHandleIcon" />
               <Link
-                href={"https://www.instagram.com/financewith_arnav"}
+                href={"https://www.instagram.com/the_wealthseed"}
                 target="_blank"
               >
                 <FaInstagram className="mediaHandleIcon" />
               </Link>
+              <Link
+                href={"https://linkedin.com/in/harishdel"}
+                target="_blank"
+              >
               <FaLinkedin className="mediaHandleIcon" />
+              </Link>
             </div>
           </div>
           <div className="col-lg-3 mb-3">
@@ -89,7 +94,7 @@ const Footer = () => {
       </footer>
       <div className="outerBoxWrapper">
         <h2 className="copyRightSection">
-          Copyright © {currentYear} FinanceWithArnav. All rights reserved.
+          Copyright © {currentYear} WealthSeed. All rights reserved.
         </h2>
       </div>
     </>
